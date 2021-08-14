@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !-d
+#RewriteCond %{REQUEST_URI}.php -f
+RewriteRule ^([^/]+)/$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ErrorDocument 400 http://localhost/404/error.php?erreur=400
+ErrorDocument 401 http://localhost/404/error.php?erreur=401
+ErrorDocument 402 http://localhost/404/error.php?erreur=402
+ErrorDocument 403 http://localhost/404/error.php?erreur=403
+ErrorDocument 404 http://localhost/404/error.php?erreur=404
+ErrorDocument 405 http://localhost/404/error.php?erreur=405
+ErrorDocument 500 http://localhost/404/error.php?erreur=500
+ErrorDocument 501 http://localhost/404/error.php?erreur=501
+ErrorDocument 502 http://localhost/404/error.php?erreur=502
+ErrorDocument 503 http://localhost/404/error.php?erreur=503
+ErrorDocument 504 http://localhost/404/error.php?erreur=504
+ErrorDocument 505 http://localhost/404/error.php?erreur=505
+ServerSignature Off
+Options -Indexes
