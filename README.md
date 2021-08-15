@@ -25,7 +25,7 @@
 </h3>
 <br>
 <p align="center" width="100%">
-    <img width="80%" src="https://cdn.discordapp.com/attachments/865190840322490368/876363853611560970/gocut_video_1629009627732_1080HD.gif"> 
+    <img width="80%" src="https://cdn.discordapp.com/attachments/865190840322490368/876368716189814864/giferror.gif"> 
 </p>
 
 ## 🛠 Instructions d'installation
